@@ -13,5 +13,7 @@ jobs:
     timeout-minutes: 5
     steps:
     - uses: actions/checkout@v4
-    - name: Buld
+    - name: Build
       run: g++ main.cpp -o sumprod
+    - name: Test
+      run: ./tests.sh
